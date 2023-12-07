@@ -28,7 +28,7 @@ The web application uses Firebase for real-time data storage and retrieval. The 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aku7703/Code4Community-Chat.git
+   git clone https://github.com/aku7703/c4cassessment.git
    cd c4cassessment
    
    
