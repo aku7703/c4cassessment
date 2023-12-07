@@ -6,7 +6,7 @@ This repository contains Aniket Chaudhry's code for the Code4Community Technical
 ## Components and Interactions
 
 ### HTML
-The HTML file (`index.html`) provides the structure for the web application. It includes links to Google Fonts, Font Awesome icons, and the Firebase library. The main body is initially empty and dynamically populated based on user interactions.
+The HTML file (`index.html`) provides the structure for the web application. It includes links to Google Fonts and the Google Firebase library. The main body is initially empty and dynamically populated based on user interactions.
 
 ### JavaScript
 The JavaScript file (`index.js`) is responsible for the core functionality of the web application. It utilizes the Firebase Realtime Database to store and retrieve messages. The `AnonymousChat` class is defined, which manages the creation of the home page, chat page, and various UI elements.
@@ -28,7 +28,7 @@ The web application uses Firebase for real-time data storage and retrieval. The 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Code4Community-Chat.git
+   git clone https://github.com/aku7703/Code4Community-Chat.git
    cd Code4Community-Chat
    
    
