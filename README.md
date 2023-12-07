@@ -50,3 +50,6 @@ Start interacting with the Code4Community Chat!
    
 4. **Hosting:**
     - The project is currently hosted at: https://aniketcc4cassessment.netlify.app/
+
+4. **Animations:**
+    - A loading animation is played while the message is being sent to Firebase.
