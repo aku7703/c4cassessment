@@ -15,41 +15,26 @@ window.onload = function () {
   // Database reference for Firebase
   var db = firebase.database();
 
+  // Image of C4C Logo
+  var myHtml =  '<img class="center" width="100px" src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/C4C_Icon_Gradient.png" />';
+
   // Class definition for the anonymous chat application
   class AnonymousChat {
     // Method to create the home page
     home() {
-      document.body.innerHTML = ""; // Clear the body before adding new content
-      this.createTitle();
+      document.body.innerHTML = "";
+      document.body.innerHTML = myHtml;
       this.createJoinForm();
     }
 
     // Method to create the chat page
     chat() {
-      this.createTitle();
+      document.body.innerHTML = "";
+      document.body.innerHTML = myHtml;
       this.createChat();
     }
 
-    // Method to create the title element
-    createTitle() {
-      // Create a container for the title
-      var titleContainer = document.createElement("div");
-      titleContainer.setAttribute("id", "title_container");
-
-      // Create an inner container for styling purposes
-      var titleInnerContainer = document.createElement("div");
-      titleInnerContainer.setAttribute("id", "title_inner_container");
-
-      // Create the title element
-      var title = document.createElement("h1");
-      title.setAttribute("id", "title");
-      title.textContent = "Code4Community Chat";
-
-      // Append the elements to the DOM
-      titleInnerContainer.append(title);
-      titleContainer.append(titleInnerContainer);
-      document.body.append(titleContainer);
-    }
+    
 
     // Method to create the join form
     createJoinForm() {
@@ -127,12 +112,6 @@ window.onload = function () {
     createChat() {
       // Reference to the current instance of the class
       var parent = this;
-
-      // Get elements related to the title for styling adjustments
-      var titleContainer = document.getElementById("title_container");
-      var title = document.getElementById("title");
-      titleContainer.classList.add("chat_title_container");
-      title.classList.add("chat_title");
 
       // Create elements for the chat container
       var chatContainer = document.createElement("div");
@@ -380,7 +359,7 @@ window.onload = function () {
 
           var messageContent = document.createElement("p");
           messageContent.setAttribute("class", "message_content");
-          messageContent.textContent = `${message}` + '\n\n\n' + '-' + `${timestamp}`;
+          messageContent.textContent = `${message}` + '\n\n\n' + 'Sent: ' + `${timestamp}`;
 
           messageUserContainer.append(messageUser);
           messageContentContainer.append(messageContent);
